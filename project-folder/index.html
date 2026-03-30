@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <!-- SVG Favicon Integration -->
+    <link rel="icon" type="image/svg+xml" href="assets/svg/favicon.svg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="card">
+        <picture>
+            <!-- High-performance WebP format -->
+            <source srcset="assets/images/hero-image.webp" type="image/webp">
+            <!-- Optimized JPG Fallback -->
+            <img src="assets/images/hero-image.jpg" alt="Fictional Product" class="hero-img" loading="lazy">
+        </picture>
+
+        <div class="content">
+            <h1>Lumina X1</h1>
+            <p>Experience the next generation of minimalist design and high-performance engineering. Built for those who value clarity.</p>
+            <a href="#" class="cta-button">View Project</a>
+        </div>
+    </main>
+
+    <!-- 
+      OPTIMIZATION NOTE:
+      - 'hero-image.webp': Converted via Squoosh for maximum compression.
+      - 'hero-image.jpg': Compressed via TinyJPG to under 100KB for fast fallback loading.
+    -->
+</body>
+</html>
 
