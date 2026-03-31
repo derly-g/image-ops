@@ -8,16 +8,9 @@ body {
     margin: 0;
 }
 .product-image {
-        /* Changed width to make it smaller */
-        width: 600px; 
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 1.5rem;
-    }
-
-.web-img {
-        /* Changed width to make it smaller */
-        width: 600px; 
+        /* Set specifically to 600px as requested */
+        width: 600px;
+        max-width: 100%; /* Ensures it stays responsive on smaller screens */
         height: auto;
         border-radius: 8px;
         margin-bottom: 1.5rem;
