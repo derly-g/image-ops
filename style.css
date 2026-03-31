@@ -7,12 +7,14 @@ body {
     min-height: 100vh;
     margin: 0;
 }
-.container {
-        width: 700px; 
+.product-image {
+        /* Changed width to make it smaller */
+        width: 200px; 
         height: auto;
         border-radius: 8px;
         margin-bottom: 1.5rem;
     }
+
 .web-img {
         width: 700px; 
         height: auto;
