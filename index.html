@@ -4,50 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Showcase</title>
-    <!-- SVG Favicon Integration -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="container">
-    <!-- Image source updated to 'fuggly.jpg' -->
-    <img src="fuggly.jpg" alt="Fuggler Old Tooth Plush" class="product-image">
-    
-    <h1>Fuggler: Old Tooth</h1>
-    <p>
-        Meet the <strong>Laboratory Misfit: Old Tooth</strong>. This experiment gone wrong features 
-        disturbingly human-like teeth, vibrant pink and yellow tiger stripes, and a 
-        personality only a collector could love. Adopt if you dare!
-    </p>
-    
-    <a href="#" class="cta-button">View Project</a>
-</div>
 
+<main class="container">
+    <!-- Card 1 -->
+    <div class="card">
+        <img src="fuggly.jpg" alt="Fuggler Old Tooth" class="card-img">
+        <div class="content">
+            <h1>Fuggler: Old Tooth</h1>
+            <p>Meet the <strong>Laboratory Misfit</strong>. This experiment features disturbingly human-like teeth and vibrant stripes. Adopt if you dare!</p>
+            <a href="#" class="cta-button">View Project</a>
+        </div>
+    </div>
 
-    <div class="content">
-        <h1>Fuggler Showcase: Old Tooth</h1>
-        <p>A "Laboratory Misfit" with a personality only a mother could love. This showcase demonstrates optimized WebP delivery with a compressed JPG fallback for the best performance.</p>
-        <a href="#" class="cta-button">Adopt Now</a>
+    <!-- Card 2 -->
+    <div class="card">
+        <picture>
+            <source srcset="fugonnet.webp" type="image/webp">
+            <img src="fuggly.jpg" alt="Fuggler Showcase" class="card-img" loading="lazy">
+        </picture>
+        <div class="content">
+            <h1>Fuggler Showcase</h1>
+            <p>A personality only a mother could love. This showcase demonstrates optimized WebP delivery with a compressed JPG fallback.</p>
+            <a href="#" class="cta-button">Adopt Now</a>
+        </div>
     </div>
 </main>
 
-<!-- 
-  NOTE FOR SUBMISSION:
-  - Compressed Image: assets/images/hero-image.jpg (Optimized for size)
-  - WebP Image: assets/images/hero-image.webp (Modern lightweight format)
--->
-
-    <main class="card">
-        <picture>
-            <!-- High-performance WebP format -->
-            <source srcset="fugonnet.webp" type="image/webp">
-            <!-- Optimized JPG Fallback -->
-            <img src="fuggly.jpg" alt="Fictional Product" class="web-img" loading="lazy">
-        </picture>
-    <!-- 
-      OPTIMIZATION NOTE:
-      - 'hero-image.webp': Converted via Squoosh for maximum compression.
-      - 'hero-image.jpg': Compressed via TinyJPG to under 100KB for fast fallback loading.
-    -->
 </body>
 </html>
