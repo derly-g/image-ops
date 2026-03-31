@@ -1,62 +1,75 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f9;
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
 }
-.product-image {
-        /* Set specifically to 600px as requested */
-        width: 600px;
-        max-width: 100%; /* Ensures it stays responsive on smaller screens */
-        height: auto;
-        border-radius: 8px;
-        margin-bottom: 1.5rem;
-    }
+
+.container {
+    display: flex;
+    gap: 2rem; /* Space between cards */
+    padding: 2rem;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Allows stacking on mobile */
+    justify-content: center;
+}
 
 .card {
     background: white;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     overflow: hidden;
-    max-width: 400px;
+    width: 400px; /* Fixed width for consistency */
     text-align: center;
     transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .card:hover {
     transform: translateY(-5px);
 }
 
-.hero-img {
+.card-img {
     width: 100%;
-    height: 250px;
-    object-fit: cover;
+    height: 300px; /* Forces both images to the same height */
+    object-fit: cover; /* Prevents stretching/distortion */
+    display: block;
 }
 
 .content {
-    padding: 2rem;
+    padding: 1.5rem;
+    flex-grow: 1; /* Ensures text area expands equally */
 }
 
 h1 {
     margin-top: 0;
     color: #333;
+    font-size: 1.5rem;
 }
 
 p {
     color: #666;
-    line-height: 1.6;
+    line-height: 1.5;
+    font-size: 0.95rem;
 }
 
 .cta-button {
     display: inline-block;
     margin-top: 1rem;
-    padding: 10px 25px;
-    background-color: #007bff;
+    padding: 12px 25px;
+    background-color: #e91e63;
     color: white;
     text-decoration: none;
     border-radius: 25px;
     font-weight: bold;
+    transition: background 0.3s;
 }
+
+.cta-button:hover {
+    background-color: #c2185b;
+}
+
