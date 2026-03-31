@@ -9,59 +9,60 @@ body {
 }
 
 .container {
-    display: flex;         /* Places items side-by-side */
-    flex-direction: row;   /* Horizontal alignment */
-    gap: 1.5rem;          /* Small gap between cards */
+    display: flex;         
+    flex-direction: row;   
+    gap: 1rem;            /* Reduced gap */
     padding: 1rem;
     justify-content: center;
+    flex-wrap: nowrap;    /* Prevents cards from jumping to a new line */
 }
 
 .card {
     background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    border-radius: 8px;    /* Slightly tighter corners */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     overflow: hidden;
-    width: 280px;          /* Smaller card width */
+    width: 220px;          /* Narrower cards */
     text-align: center;
     transition: transform 0.2s;
 }
 
 .card:hover {
-    transform: scale(1.02);
+    transform: translateY(-5px); /* Changed to lift effect for a cleaner look */
 }
 
 .card-img {
     width: 100%;
-    height: 180px;         /* Shorter image height */
+    height: 140px;         /* Shorter images */
     object-fit: cover;
     display: block;
 }
 
 .content {
-    padding: 1rem;
+    padding: 0.75rem;      /* Tighter interior padding */
 }
 
 h1 {
-    font-size: 1.2rem;     /* Smaller headings */
-    margin: 0.5rem 0;
+    font-size: 1rem;       /* Smaller titles */
+    margin: 0.3rem 0;
     color: #333;
 }
 
 p {
-    font-size: 0.85rem;    /* Smaller text */
+    font-size: 0.75rem;    /* Smaller description text */
     color: #666;
-    line-height: 1.4;
+    line-height: 1.3;
+    margin-bottom: 0.8rem;
 }
 
 .cta-button {
     display: inline-block;
-    margin-top: 0.5rem;
-    padding: 8px 20px;
+    padding: 6px 15px;     /* Smaller button */
     background-color: #e91e63;
     color: white;
     text-decoration: none;
-    border-radius: 20px;
-    font-size: 0.85rem;
+    border-radius: 15px;
+    font-size: 0.75rem;
     font-weight: bold;
 }
 
