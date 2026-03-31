@@ -7,6 +7,18 @@ body {
     min-height: 100vh;
     margin: 0;
 }
+.product-image {
+        width: 800px; 
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+    }
+.webimage {
+        width: 800px; 
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 1.5rem;
+    }
 
 .card {
     background: white;
